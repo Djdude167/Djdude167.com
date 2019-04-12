@@ -19,10 +19,7 @@ nav a {
     text-transform: uppercase;
 }
 nav a:hover {
-    color: #FFF
-    /*
-    color: #2980b9;
-    */
+    color: #FFF;
 }
 .navbar {
     align-items: center;
@@ -48,6 +45,7 @@ nav a:hover {
 .navbar li:hover {
     background-color: #266fa0;
     border-radius: 3px;
+    cursor: pointer;
     transition: 0.25s ease;
 }
 
