@@ -19,13 +19,16 @@ nav a {
     text-transform: uppercase;
 }
 nav a:hover {
+    color: #FFF
+    /*
     color: #2980b9;
+    */
 }
 .navbar {
     align-items: center;
     display: flex;
     justify-content: space-around;
-    padding: 20px 0px;
+    padding: 15px 0px;
     margin-right: 5px;
     min-height: 4vh;
 }
@@ -39,6 +42,13 @@ nav a:hover {
 }
 .navbar li {
     margin-left: 12px;
+    padding: 5px;
+    padding-top: 7px;
+}
+.navbar li:hover {
+    background-color: #266fa0;
+    border-radius: 3px;
+    transition: 0.25s ease;
 }
 
 /*Main Title/Logo*/
