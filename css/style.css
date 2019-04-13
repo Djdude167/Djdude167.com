@@ -5,7 +5,6 @@
 
 body {
     font-family: "montserrat",sans-serif;
-    font-size: 16px
 }
 header {
     background: rgb(29, 22, 22);
@@ -78,25 +77,44 @@ nav a:hover {
     transition: all 0.3s ease;
 }
 /*Socail Media Banner*/
-.social-media {
+.social-media-bar {
+    background-color: #FFF;
+    padding: 0px;
     position: absolute;
-    opacity: 30%;
-    color: #3498db;
     top: 25vh;
-    box-shadow: 0 5px 15px -5px #00000070;
-    font-size: 24px;
+    transform: translateX(-50px);
+    font-size: 22px;
+    transition: 0.5s ease;
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: 0 5px 15px -5px #000000;
+    color: #FFF;
+    transition-delay: 0.2s;
+}
+#social-media-arrow {
+    color: #FFFFFF75;
+    position: absolute;
+    padding-left: 10px; 
+    transform: translateX(50px);
+    bottom: 45%;
+    animation-name: sm-arrow;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+}
+#social-media-arrow:hover {
+    color: rgba(255, 255, 255, 100)
+}
+.social-media-bar:hover {
+    color: #FFF;
+    padding: 1px;
+    transform: translateX(0px);
     transition: 0.5s ease;
 }
-.social-media:hover {
-    padding: 3px;
-    transition: 0.5s ease;
+.social-media i {
+    color: #3498db;
 }
 .social-media i:hover {
-    font-size: 30px;
+    font-size: 26px;
     transition: 0.5s ease;
-    /*
-    text-decoration: underline;
-    */
     transform: rotate(360deg);
 }
 .smbtn {
@@ -105,7 +123,7 @@ nav a:hover {
     background-color: #FFF;
     color: #3498db;
     text-decoration: none;
-    margin: 18px;
+    margin: 14px;
 }
 
 /*Mobile Displays*/
@@ -167,5 +185,16 @@ nav a:hover {
     100% {
         opacity: 1;
         transform: translateX(0px);
+    }
+}
+@keyframes sm-arrow {
+    0% {
+        transform: translateX(50px)
+    }
+    50% {
+        transform: translateX(55px)
+    }
+    100% {
+        transform: translateX(50px)
     }
 }
