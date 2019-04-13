@@ -91,7 +91,7 @@ nav a:hover {
     transition-delay: 0.2s;
 }
 #social-media-arrow {
-    color: #FFFFFF75;
+    color: rgb(158, 158, 158);
     position: absolute;
     padding-left: 10px; 
     transform: translateX(50px);
