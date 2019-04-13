@@ -14,7 +14,7 @@ const navSlide = () => {
         } else {
             link.style.animation = `navLinkFade 0.5s ease forwards ${index / 5 + 0.3}s`;
         }
-        
+
     });
     
     //Burger Change
@@ -22,6 +22,17 @@ const navSlide = () => {
 
     });
 
+    
 } 
+/*
+const aboutSlide = aboutSlide() => {
+    const aboutOpen = document.querySelectorAll('#about-page-container p');
+
+    //Animate About Page
+    aboutOpen.forEach((link, index) => {
+            link.style.animation = `about-page-blur 0.5s ease forwards ${index / 5 + 0.3}s`;
+});
+}
+*/
 
 navSlide();
