@@ -2,8 +2,7 @@
     padding: 0;
     margin: 0;
 }
-
-body {
+ body {
     font-family: "montserrat",sans-serif;
 }
 @font-face {
@@ -17,6 +16,16 @@ header {
     width: 100%;
     z-index: 999;
 }
+#page-container {
+    position: relative;
+    min-height: 100vh;
+    padding-top: 60px;
+}
+#content-wrap {
+    padding-bottom: 50px;    /* Footer height */
+}
+
+/* Navbar */
 nav a {
     color: #FFF;
     text-decoration: none;
@@ -138,25 +147,32 @@ nav a:hover {
     text-decoration: none;
     margin: 14px;
 }
-footer {
+
+/*Footer*/
+#footer {
     position: absolute;
     background-color: rgb(29, 22, 22);
+    bottom: 0;
     width: 100%;
+    color: white;
+    text-align: center;
     height: 50px;
-    bottom: 0px;
+}
+.footer-links {
+    color: #FFF;
+    margin: 0 auto;
 }
 footer ul {
     color: #FFF;
     width: 50%;
-    padding-top: 5px;
-    list-style-type:none;
+    list-style-type: none;
     display: flex;
-    margin: 0 auto;
     letter-spacing: 1px;
     font-weight: bold;
 }
 footer li {
     padding: 8px;
+    margin-top: 6px;
     margin-left: 33.3%;
 }
 footer li:first-child {
