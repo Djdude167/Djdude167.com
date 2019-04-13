@@ -39,7 +39,7 @@ nav a:hover {
     display: flex;
     justify-content: space-around;
     padding: 15px 0px;
-    margin-right: 5px;
+    width: 101%;
     min-height: 4vh;
 }
 .nav-links {
@@ -123,7 +123,8 @@ nav a:hover {
     animation-duration: 4s;
 }
 #social-media-arrow:hover {
-    color: rgba(255, 255, 255, 100)
+    color: rgba(255, 255, 255, 100);
+    transition: 0.15s ease-in;
 }
 .social-media-bar:hover {
     color: #FFF;
@@ -188,12 +189,21 @@ footer li:hover {
 }
 
 /*Mobile Displays*/
+@media screen and (min-width:1125px) {
+    .navbar {
+        width: 108%;
+    }
+}
 @media screen and (min-width:1024px) {
     .nav-links {
         margin-left: 50%;
     }
+    footer li {
+        padding: 8px 2px;
+        
+    }
 }
-@media screen and (max-width:768px) {
+@media screen and (max-width:885px) {
     body {
         overflow-x: hidden;
     }
@@ -216,6 +226,9 @@ footer li:hover {
     }
     .nav-links li {
         opacity: 0;
+    }
+    .footer-links {
+        margin-left: 10%;
     }
 
 /*Javascript Toggle Tags*/
