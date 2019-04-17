@@ -24,6 +24,9 @@ const navSlide = () => {
 
     
 } 
+
+navSlide();
+
 /*
 const aboutSlide = aboutSlide() => {
     const aboutOpen = document.querySelectorAll('#about-page-container p');
@@ -34,5 +37,3 @@ const aboutSlide = aboutSlide() => {
 });
 }
 */
-
-navSlide();

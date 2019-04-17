@@ -139,10 +139,6 @@ nav a:hover {
     margin: 5px;
     transition: all 0.3s ease;
 }
-.about-aboutme {
-    font-size: 24px;
-    padding: 5px
-}
 /*Socail Media Banner*/
 .social-media-bar {
     background-color: #FFF;
@@ -199,6 +195,7 @@ nav a:hover {
     position: absolute;
     background-color: rgb(29, 22, 22);
     bottom: 0px;
+    top: calc(100%-50px);
     width: 100%;
     color: white;
     text-align: center;
@@ -231,6 +228,12 @@ footer li:hover {
     transition: 0.25s ease;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.about-aboutme {
+    font-size: 24px;
+    padding: 5px;
+    padding-right: 250px;
 }
 
 /*Mobile Displays*/
@@ -275,9 +278,15 @@ footer li:hover {
     .footer-links {
         margin-left: 10%;
     }
-
-/*Javascript Toggle Tags*/
+    .about-img {
+        display: none;
+    }
+    .about-aboutme p {
+        width: 80%;
+        padding-right: 0px;
+    }
 }
+/*Javascript Toggle Tags*/
 .nav-active {
     transform: translateX(0%)
 }
