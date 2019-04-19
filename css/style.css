@@ -10,6 +10,9 @@
     src: url('Minecraftia.ttf') format('emmbedded-opentype'),
     url('Minecraftia.ttf') format('opentype');
 }
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
 header {
     background: rgb(29, 22, 22);
     position: fixed;
