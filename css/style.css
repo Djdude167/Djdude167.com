@@ -203,9 +203,10 @@ nav a:hover {
 /* Page Content */
 .carousel {
     position: relative;
-    height: 600px;
-    width: 80%;
+    height: 551.25px;
+    width: 980px;
     margin: 0 auto;
+    margin-top: 60px;
 }
 .carousel_content {
     width: 100%;
@@ -213,7 +214,6 @@ nav a:hover {
     object-fit: cover;
 }
 .carousel_track_container {
-    background: red;
     height: 100%;
     position: relative;
     overflow: hidden;
@@ -264,8 +264,10 @@ nav a:hover {
     cursor: pointer;
 }
 .carousel_indicator.current-slide {
-    background: rgba(0, 0, 0, 1)
+    background: rgba(0, 0, 0, 0.75);
+    transition: 250ms ease;
 }
+.is-hidden { display: none; }
 /*Footer*/
 #footer {
     position: absolute;
@@ -320,7 +322,12 @@ footer li:hover {
     }
     footer li {
         padding: 8px 2px;
-        
+    }
+}
+@media screen and (max-width:1024px) {
+    .carousel {
+        width: 560px;
+        height: 315px;
     }
 }
 @media screen and (max-width:885px) {
