@@ -24,6 +24,8 @@ header {
     min-height: 100vh;
     padding-top: 60px;
 }
+
+/*About Page*/
 #about-page-container:before {
     content: "";
     position: absolute;
@@ -52,22 +54,28 @@ header {
     animation-delay: 0.5s;
     animation-duration: 1500ms;
     animation-fill-mode: forwards;
-    background-color: rgba(255, 255, 255, 0.5);
-    padding: 0px 210px 0px 30px;
  }
 #about-page-container img {
     position: absolute;
-    right: 45px;
     border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    left: 42.5%;  
+    top: 75px;
     animation-name: about-page-img;
     animation-delay: 0.45s;
     animation-duration: 1500ms;
     animation-fill-mode: forwards;
     transform: translateY(-400px);
+    box-shadow: 0px 1px 15px 0px #000000;
 }
-#content-wrap {
-    padding-bottom: 50px;    /* Footer height */
+.about-aboutme {
+    font-size: 24px;
+    background: rgba(255, 255, 255, 0.5);
+    padding-top: 1px;
+    padding: 0px 15px 0px 30px;
 }
+
 
 /* Navbar */
 nav a {
@@ -106,7 +114,7 @@ nav a:hover {
     transition: 0.25s ease;
 }
 
-/*Main Title/Logo*/
+/* Main Title/Logo */
 #main-title {
     position: absolute;
     font-size: 22px;
@@ -192,13 +200,78 @@ nav a:hover {
     text-decoration: none;
     margin: 14px;
 }
-
+/* Page Content */
+.carousel {
+    position: relative;
+    height: 600px;
+    width: 80%;
+    margin: 0 auto;
+}
+.carousel_content {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.carousel_track_container {
+    background: red;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.carousel_track {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative;
+    height: 100%;
+    transition: transform 500ms ease;
+}
+.carousel_slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+.carousel_button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 36px;
+    background: transparent;
+    border: 0;
+    color: #FFF;
+    cursor: pointer;
+    z-index: 50;
+}
+.carousel_button--left {
+    left: 20px;
+}
+.carousel_button--right {
+    right: 20px;
+}
+.carousel_nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+.carousel_indicator {
+    border: 0;
+    width: 15px;
+    height: 15px;
+    background: rgba(0, 0, 0, .5);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+.carousel_indicator.current-slide {
+    background: rgba(0, 0, 0, 1)
+}
 /*Footer*/
 #footer {
     position: absolute;
     background-color: rgb(29, 22, 22);
     bottom: 0px;
-    top: calc(100%-50px);
+    top: 120%;
     width: 100%;
     color: white;
     text-align: center;
@@ -232,13 +305,9 @@ footer li:hover {
     padding-top: 10px;
     padding-bottom: 10px;
 }
-
-.about-aboutme {
-    font-size: 24px;
-    padding: 5px;
-    padding-right: 250px;
+#content-wrap {
+    padding-bottom: 50px;    /* Footer height */
 }
-
 /*Mobile Displays*/
 @media screen and (min-width:1125px) {
     .navbar {
@@ -280,9 +349,6 @@ footer li:hover {
     }
     .footer-links {
         margin-left: 10%;
-    }
-    .about-img {
-        display: none;
     }
     .about-aboutme p {
         width: 80%;
@@ -344,14 +410,14 @@ footer li:hover {
         transform: translateY(-100px)
     }
     100% {
-        transform: translateY(30vh);
+        transform: translateY(40vh);
     }
 }
 @keyframes about-page-img {
     0% {
-        transform: translateY(-400px);
+        transform: translateY(-400px) scale(0.75);
     }
     100% {
-        transform: translateY(10vh);
+        transform: translateY(10vh) scale(0.75);
     }
 }
