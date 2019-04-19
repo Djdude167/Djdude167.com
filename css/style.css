@@ -63,7 +63,7 @@ header {
     left: 42.5%;  
     top: 75px;
     animation-name: about-page-img;
-    animation-delay: 0.45s;
+    animation-delay: 0.6s;
     animation-duration: 1500ms;
     animation-fill-mode: forwards;
     transform: translateY(-400px);
@@ -201,6 +201,7 @@ nav a:hover {
     margin: 14px;
 }
 /* Page Content */
+/* Carousel */
 .carousel {
     position: relative;
     height: 551.25px;
